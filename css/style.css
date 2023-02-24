@@ -6,19 +6,21 @@ body {
         padding: 0;
     }
 
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
 #profesion{
 	font-weight: 400;
-}
-
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
+	font-size: medium;
 }
 
 header {
-	background-color: #999999;
+	/*background-color: #999999;*/
 	padding: 20px 0;
+	display: inline-flexbox;
 }
 
 header h1, header p {
@@ -36,25 +38,40 @@ header p {
 	font-weight: 300;
 }
 
-header ul {
+footer ul {
 	list-style: none;
 	margin: 20px 0 0;
 	padding: 0;
+	display: inline-block;
+	width: 100%;
+	max-width: 500px;
+}
+footer p {
+	padding-left: 190px;
+	display: inline-block;
+ 	width: 100%;
+	max-width: 500px;
 }
 
-header li {
+footer li {
 	display: inline-block;
 	margin-right: 20px;
 }
 
-header a {
+footer a {
 	color: #fff;
 	text-decoration: none;
 	font-size: 20px;
 }
 
 nav {
-	background-color: #999999;
+	/*background-color: #999999;*/
+	backdrop-filter:invert(100%) ;
+	position: fixed;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+	z-index: 9999;
 }
 
 nav ul {
@@ -72,6 +89,12 @@ nav a {
 	color: #fff;
 	text-decoration: none;
 	font-size: 24px;
+}
+
+nav a:hover {
+	color: #000;
+	transition: 0,5s;
+
 }
 
 section {
