@@ -4,58 +4,53 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>eonishi</title>
+	<link rel="icon" type="image/x-icon" href="css/img/logo-title.png">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="script/nav-scroll.js"></script>
 </head>
 <body>
 	<header>
-		<div class="container">
-			<h1>Eduardo Onishi</h1>
-			<p id="profesion">Estudiante de Ingeniería Sistemas de Información</p>
-			<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">LinkedIn</a></li>
-			</ul>
-		</div>
+			<div class="center-black">
+				<h1  id="titulo">E<span id="tachado">duardo </span> Onishi</h1>
+				<p id="profesion">Estudiante Ingeniería de Sistemas de Infomación</p>
+			</div>
 	</header>
-
-	<nav>
-		<div class="container">
+	<nav class="navbar">
 			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Sobre mí</a></li>
-				<li><a href="#">Proyectos</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a href="#bienvenida-scroll">Bienvenido</a></li>
+				<li><a href="#sobre-mi-scroll">Sobre Mí</a></li>
+				<li><a href="#proyectos-scroll">Proyectos</a></li>
+				<li><a href="#contacto-scroll">Contacto</a></li>
+				<li><a href="#Blog">Blog</a></li>
 			</ul>
-		</div>
-	</nav>
+	</nav><hr class="break-line" id="bienvenida-scroll">
 
 	<section id="bienvenida">
 		<div class="container">
-			<h2>Bienvenido/a</h2>
-			<p>Soy Juan, un desarrollador web apasionado por crear sitios web impresionantes y fáciles de usar.</p>
+			<h2>Bienvenido</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eaque nobis? Cum suscipit soluta fugiat in nulla dolores exercitationem. Laudantium incidunt dolores possimus, ipsa enim voluptate architecto totam quis temporibus.</p>
 		</div>
-	</section>
+	</section><hr class="break-line" id="sobre-mi-scroll">
 
 	<section id="sobre-mi">
 		<div class="container">
 			<h2>Sobre Mí</h2>
-			<p>Me gradué en la Universidad Nacional Autónoma de México con una licenciatura en Informática. Desde entonces, he estado trabajando como desarrollador web y me encanta cada día más. Soy un apasionado de la tecnología y siempre estoy buscando nuevas formas de mejorar mis habilidades y aprender cosas nuevas.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta placeat quae corporis ipsum illum ipsa, libero eaque amet vel magni minima optio odio rem neque quia nam dolores repudiandae sunt!</p>
 			<p>Algunas de las habilidades que he desarrollado son:</p>
 				<ul class="list">
-					<li><img src="svg/icons8-html-5-100.svg" alt="HTML"></li>
-					<li><img src="svg/icons8-css3-100.svg" alt="CSS"></li>
-					<li><img src="svg/icons8-javascript.svg" alt="JAVASCRIPT"></li>
-					<li><img src="svg/icons8-logotipo-de-c-plus-plus-100.svg" alt="C++"></li>
-					<li><img src="svg/icons8-git-100.svg" alt="GIT"></li>
+					<li class="fx-skill"><img src="css/img/icons8-logotipo-de-c-plus-plus-100.svg" alt="C++"></li>
+					<li class="fx-skill"><img src="css/img/icons8-git-100.svg" alt="GIT"></li>
+					<li class="fx-skill"><img src="css/img/icons8-html-5-100.svg" alt="HTML"></li>
+					<li class="fx-skill"><img src="css/img/icons8-css3-100.svg" alt="CSS"></li>
+					<li class="fx-skill"><img src="css/img/icons8-javascript.svg" alt="JAVASCRIPT"></li>
 				</ul>
 		</div>
-	</section>
+	</section><hr class="break-line" id="proyectos-scroll">
 
 	<section id="proyectos">
 		<div class="container">
 			<h2>Proyectos</h2>
-			<div class="proyecto">
+			<div class="proyecto" class="grid">
 				<img src="proyecto1.jpg" alt="Proyecto 1">
 				<h3>Proyecto 1</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget libero eu tellus bibendum laoreet vel in sapien.</p>
@@ -71,4 +66,17 @@
 				<img src="proyecto3.jpg" alt="Proyecto 3">
 				<h3>Proyecto 3</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget libero eu tellus bibendum laoreet vel in sapien.</p>
-				<a href="#">
+				<a href="#">Ver Proyecto</a>
+	</section><hr class="break-line" id="contacto-scroll">
+
+	<footer>
+		<div class="container" id="footer">
+			<p>© 2023 eonishi. Todos los derechos reservados.</p>
+			<ul id="contacto">
+				<li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+				<li><a href="https://github.com/" target="_blank">Github</a></li>
+				<li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+				<li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+			</ul>
+		</div>
+	</footer>
