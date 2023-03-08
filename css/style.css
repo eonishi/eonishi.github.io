@@ -76,8 +76,7 @@ body{
 	.navbar a{
 		text-decoration: none;
 		font-size: 700;
-		color: white
-	
+		color: white;
 	}
 
 	.container{
@@ -106,7 +105,27 @@ body{
 		transition: 0.5s;
 	}
 		
+	.contenedor-proyectos{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
 
+	.card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card .boton{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.card button a{
+		text-decoration: none;
+		color: #161616;
+	}
 
 	.break-line{
 		opacity: 0%;;
