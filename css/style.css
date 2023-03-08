@@ -131,23 +131,23 @@ body{
 		opacity: 0%;;
 	}
 
-	footer p {
-		display: inline-block;
-		width: 50%;
+	footer .container{
+		display: flex;
+		justify-content: space-between;
 	}
 
-	footer ul{
+	footer .container #contacto{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 3vw;
+
 		list-style: none;
-		display: inline-block;
-	} 
-	footer ul li{
-		display: inline-block;
-		margin: 0px 2vw;
 	}
 
-	footer ul li a{
+	footer .container #contacto li a{
 		text-decoration: none;
-		color: black;
+		color: #161616;
 	}
 
 	footer li:hover{
@@ -176,7 +176,6 @@ body{
 
 	#flyer p{
 		margin: 2px 0px;
-		font-weight: bold;
 		font-size: 1.5vw;
 		word-spacing: 13px;
 	}
