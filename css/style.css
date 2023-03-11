@@ -11,7 +11,6 @@ body{
 
 	header{
 		background-color: #161616;
-		padding-top: 20px;
 		height: 100vh;
 
 		display: flex;
@@ -108,7 +107,8 @@ body{
 	.contenedor-proyectos{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 20px;
+		gap: 60px;
+		padding-bottom: 20px;
 	}
 
 	.card {
@@ -118,15 +118,30 @@ body{
 	}
 
 	.card .boton{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
 	}
 
-	.card button a{
-		text-decoration: none;
+	.card button{
+		cursor: pointer;
+		background-color: #161616;
+		color: white;
+		font-weight: bold;
+		letter-spacing: 1.2px;
+		border: none;
+		border-radius: 5px;
+		padding: 5px 10px;
+		margin: 10px 0px;
+		border: 1px solid #161616;
+	}
+
+	.card button:hover{
+		transform: scale(1.1);
+		background-color: transparent;
 		color: #161616;
+		transition: 0.5s;
 	}
-
 	.break-line{
 		opacity: 0%;;
 	}
