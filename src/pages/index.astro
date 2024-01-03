@@ -1,22 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GitHubIcon from "../components/icons/Github.astro";
+import MalIcon from "../components/icons/Mail.astro";
 ---
 
 <Layout
 	title="Porfolio de Eduardo Onishi - Desarrollador FullStack especializado en DevOps"
 >
-	<header
-		class="flex justify-center items-center
-    mx-auto
-    py-5
-    sticky top-0
-    w-2/5
-    z-20"
-	>
-		<NavBar />
-	</header>
-
+	<NavBar />
 	<main class="px-4">
 		<section class="section py-44 pb-32 w-2/5 mx-auto">
 			<h1 class="text-9xl py-6">
@@ -26,10 +20,25 @@ import NavBar from "../components/NavBar.astro";
 				<strong class="">soy eonishi</strong>
 			</h1>
 			<h2 class="text-xl text-balance">
-				Desarrollador FullStack especializado en DevOps. Me encanta
+				Desarrollador FullStack especializado en <strong>DevOps</strong>. Me encanta
 				crear aplicaciones web, las automatización de procesos y la
 				infraestructura como código.
 			</h2>
+
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<Badge href="/">
+					<LinkedInIcon class="size-6" />
+					LinkedIn
+				</Badge>
+				<Badge href="/">
+					<GitHubIcon class="size-6" />
+					GitHub
+				</Badge>
+				<Badge href="/">
+					<MalIcon class="size-6" />
+					eonishi@frba.utn.edu.ar
+				</Badge>
+			</nav>
 		</section>
 	</main>
 </Layout>

@@ -19,7 +19,7 @@ const { title } = Astro.props;
 	</head>
 	<body class:"text-satin-100">
 		<div
-			class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#132A13_40%,#b5bfa1_100%)]"
+			class="absolute inset-0 -z-10 h-[300vh] w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#132A13_40%,#b5bfa1_100%)]"
 		>
 		</div>
 		<CursorFX />
@@ -39,6 +39,6 @@ const { title } = Astro.props;
 		font-family: "Givonic Variable", system-ui, sans-serif;
 	}
 	body {
-		overflow: hidden;
+		min-height: 300vh;
 	}
 </style>

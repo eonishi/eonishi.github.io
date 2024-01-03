@@ -1,24 +1,43 @@
-<nav
-    class="rounded-full
-px-4 py-3
-flex flex-row items-center justify-center
-bg-transparent
-backdrop-blur-3xl
-gap-x-16"
->
-    <a class="hover:bg-white/10 rounded-full px-3 py-2 transition" href="/"
-        >Inicio</a
+<header
+    class="flex justify-center items-center mx-auto py-5 sticky top-0 w-2/5 z-20">
+    <nav id="header-nav-bar"
+        class="rounded-full
+    px-2 py-1
+    flex flex-row items-center justify-center
+    gap-x-8"
     >
-    <a class="hover:bg-white/10 rounded-full px-3 py-2 transition" href="/"
-        >Experiencia</a
-    >
-    <a class="hover:bg-white/10 rounded-full px-3 py-2 transition" href="/"
-        >Projectos</a
-    >
-    <a class="hover:bg-white/10 rounded-full px-3 py-2 transition" href="/"
-        >Sobre mi</a
-    >
-    <a class="hover:bg-white/10 rounded-full px-3 py-2 transition" href="/"
-        >Contacto</a
-    >
-</nav>
+        <a class="hover:bg-white/10 rounded-full px-4 py-3 transition " href="/"
+            >Inicio</a
+        >
+        <a class="hover:bg-white/10 rounded-full px-4 py-3 transition" href="/"
+            >Experiencia</a
+        >
+        <a class="hover:bg-white/10 rounded-full px-4 py-3 transition" href="/"
+            >Projectos</a
+        >
+        <a class="hover:bg-white/10 rounded-full px-4 py-3 transition" href="/"
+            >Sobre mi</a
+        >
+        <a class="hover:bg-white/10 rounded-full px-3 py-2 transition" href="/"
+            >Contacto</a
+        >
+    </nav>
+</header>
+
+<style>
+    #header-nav-bar {
+        animation: blur linear both;
+        animation-timeline: scroll();
+        animation-range: 0 500px;
+    }
+
+    @keyframes blur {
+        to {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            background: rgba(0,0,0,.1);
+            backdrop-filter: blur(10px);
+        }
+
+
+    }
+</style>

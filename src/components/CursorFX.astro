@@ -1,7 +1,6 @@
-<div class="container overflow-hidden">
+
   <div id="blob"></div>
   <div id="blur"></div>
-</div>
 
 <style>
   @keyframes rotate {
@@ -35,7 +34,7 @@
 }
 
 #blur {
-  height: 100%;
+  height: 300vh;
   width: 100%;
   position: absolute;
   z-index: -1;
@@ -49,10 +48,12 @@
 
   window.onpointermove = event => { 
     const { clientX, clientY } = event;
+    const adjustedX = clientX + window.scrollX;
+    const adjustedY = clientY + window.scrollY;
   
   blob.animate({
-    left: `${clientX}px`,
-    top: `${clientY}px`
+    left: `${adjustedX}px`,
+    top: `${adjustedY}px`
   }, { duration: 3000, fill: "forwards" });
 }
 </script>
