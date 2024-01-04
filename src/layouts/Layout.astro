@@ -1,5 +1,6 @@
 ---
 import CursorFX from "../components/CursorFX.astro";
+import Background from "../components/Background.astro";
 interface Props {
 	title: string;
 }
@@ -17,12 +18,10 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class:"text-satin-100">
-		<div
-			class="absolute inset-0 -z-10 h-auto w-full overflow-hidden [background:radial-gradient(125%_125%_at_50%_10%,#132A13_40%,#b5bfa1_100%)]"
-		>
+	<body class="text-satin-100">
+		<Background>
 			<CursorFX />
-		</div>
+		</Background>
 		<slot />
 	</body>
 </html>
