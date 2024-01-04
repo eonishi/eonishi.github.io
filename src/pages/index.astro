@@ -7,6 +7,11 @@ import LinkedInIcon from "../components/icons/LinkedIn.astro";
 import GitHubIcon from "../components/icons/GitHub.astro";
 import MailIcon from "../components/icons/Mail.astro";
 import AnimatedEmoji from "../components/icons/AnimatedEmoji.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+import Experience from "../components/Experience.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
@@ -17,98 +22,46 @@ import AnimatedEmoji from "../components/icons/AnimatedEmoji.astro";
 		<SectionInWeb id="home">
 			<h1 class="text-9xl py-6">
 				<div class="text-4xl">
-					 <AnimatedEmoji>Hola! 👋🏻</AnimatedEmoji>,
+					<AnimatedEmoji>Hola! 👋🏻</AnimatedEmoji>,
 				</div>
 				<strong class="">soy eonishi</strong>
 			</h1>
 			<h2 class="text-xl text-balance">
-				Desarrollador FullStack especializado en <strong>DevOps</strong>. Me encanta
-				crear aplicaciones web, las automatización de procesos y la
-				infraestructura como código.
+				Desarrollador FullStack especializado en <strong>DevOps</strong
+				>. Me encanta crear aplicaciones web, las automatización de
+				procesos y la infraestructura como código.
 			</h2>
 
 			<nav class="flex gap-4 mt-8 flex-wrap">
-				<Badge href="/">
+				<Badge href="https://www.linkedin.com/in/eduardo-onishi/">
 					<LinkedInIcon class="size-6" />
-					LinkedIn
+					 LinkedIn
 				</Badge>
-				<Badge href="/">
+				<Badge href="https://github.com/eonishi">
 					<GitHubIcon class="size-6" />
-					GitHub
+					 GitHub
 				</Badge>
-				<Badge href="/">
+				<Badge href="mailto:eonishi@frba.utn.edu.ar">
 					<MailIcon class="size-6" />
-					eonishi@frba.utn.edu.ar
+					 eonishi@frba.utn.edu.ar
 				</Badge>
 			</nav>
 		</SectionInWeb>
 		<SectionInWeb id="experiencia">
-			<h3>
-				<strong>Experiencia</strong>
-			</h3>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
+			<SectionTitle>
+				<Briefcase class="size-7" />
+				 Experiencia laboral
+			</SectionTitle>
+			<Experience />
 		</SectionInWeb>
 		<SectionInWeb id="proyectos">
-			<h3>
-				<strong>Proyectos</strong>
-			</h3>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
-			<div>HOLA</div>
+			<SectionTitle>
+				<CodeIcon class="size-7" />
+				Proyectos
+			</SectionTitle>
+			<Projects />
 		</SectionInWeb>
 	</main>
 </Layout>
 
-<style>
-	
-</style>
+<style></style>
