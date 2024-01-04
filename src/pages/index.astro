@@ -1,10 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import SectionInWeb from "../components/SectionInWeb.astro";
 import NavBar from "../components/NavBar.astro";
 import Badge from "../components/Badge.astro";
 import LinkedInIcon from "../components/icons/LinkedIn.astro";
-import GitHubIcon from "../components/icons/Github.astro";
-import MalIcon from "../components/icons/Mail.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import AnimatedEmoji from "../components/icons/AnimatedEmoji.astro";
 ---
 
 <Layout
@@ -12,10 +14,10 @@ import MalIcon from "../components/icons/Mail.astro";
 >
 	<NavBar />
 	<main class="px-4">
-		<section class="section py-44 pb-32 w-2/5 mx-auto">
+		<SectionInWeb>
 			<h1 class="text-9xl py-6">
 				<div class="text-4xl">
-					Hola <span class="wave">👋🏻</span>,
+					 <AnimatedEmoji>Hola 👋🏻</AnimatedEmoji>,
 				</div>
 				<strong class="">soy eonishi</strong>
 			</h1>
@@ -35,49 +37,17 @@ import MalIcon from "../components/icons/Mail.astro";
 					GitHub
 				</Badge>
 				<Badge href="/">
-					<MalIcon class="size-6" />
+					<MailIcon class="size-6" />
 					eonishi@frba.utn.edu.ar
 				</Badge>
 			</nav>
-		</section>
+		</SectionInWeb>
+		<SectionInWeb>
+			
+		</SectionInWeb>
 	</main>
 </Layout>
 
 <style>
-	.wave:hover {
-		animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-		animation-duration: 2.5s; /* Change to speed up or slow down */
-		animation-iteration-count: infinite; /* Never stop waving :) */
-		transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-		scale: 1.5;
-		transition: all 0.5s ease-in-out;
-		display: inline-block;
-	}
-
-	@keyframes wave-animation {
-		0% {
-			transform: rotate(0deg);
-		}
-		10% {
-			transform: rotate(14deg);
-		} /* The following five values can be played with to make the waving more or less extreme */
-		20% {
-			transform: rotate(-8deg);
-		}
-		30% {
-			transform: rotate(14deg);
-		}
-		40% {
-			transform: rotate(-4deg);
-		}
-		50% {
-			transform: rotate(10deg);
-		}
-		60% {
-			transform: rotate(0deg);
-		} /* Reset for the last half to pause */
-		100% {
-			transform: rotate(0deg);
-		}
-	}
+	
 </style>
