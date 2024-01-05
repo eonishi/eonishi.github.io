@@ -2,7 +2,7 @@
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 
-const DEFAULT_IMAGE = "/projects/default.avif"
+const DEFAULT_IMAGE = "/projects/default.webp"
 const TAGS = {
   NEXT: {
     name: "Next.js",
@@ -22,28 +22,17 @@ const PROJECTS = [
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nunc nisl aliquam nunc, quis ultricies nisl nisl nec nisl. Donec auctor, nisl eget ultricies ultrices, nunc nisl aliquam nunc, quis ultricies nisl nisl nec nisl.",
     link: "/",
     github: "/",
-    image: "/projects/svgl.webp" || "/projects/default.avif",
+    image: "" ,
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
 ]
-
-// Función para comprobar si la imagen existe
-async function imageExists(url) {
-  try {
-    const response = await fetch(url);
-    return response.ok;
-  } catch (error) {
-    return false;
+// Comprobar si la imagen existe
+PROJECTS.forEach((project) => {
+  if (!project.image) {
+    project.image = DEFAULT_IMAGE
   }
-}
+})
 
-// Verificar y asignar imagen por defecto si no se encuentra la imagen en la ruta especificada
-PROJECTS.forEach(async (project) => {
-  const imageExistsAtPath = await imageExists(project.image);
-  if (!imageExistsAtPath) {
-    project.image = DEFAULT_IMAGE;
-  }
-});
 ---
 
 {
