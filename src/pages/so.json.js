@@ -1,4 +1,3 @@
----
 const data = {
     llave: 'valor'
 };
@@ -6,4 +5,3 @@ const data = {
 export async function GET(){
     return new Response(JSON.stringify(data));
 }
----
